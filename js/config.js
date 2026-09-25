@@ -5,7 +5,7 @@ const CONFIG = {
 
   // --- 1) Conexión a la base de datos (ver README.md, paso 1) ---
   // Los pegas después de crear tu proyecto gratis en supabase.com
-  supabaseUrl: "https://cyfutjbmwyipsefkhcrk.supabase.co/rest/v1/",
+  supabaseUrl: "https://cyfutjbmwyipsefkhcrk.supabase.co",
   supabaseAnonKey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImN5ZnV0amJtd3lpcHNlZmtoY3JrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTAzMDUwMjksImV4cCI6MjEwNTg4MTAyOX0.q_M1YiGr_5doDbuUyEEYE0IySAI_5cbI3bu73Q8jaLc",
   table: "numbers",            // tabla completa: solo tú la lees/editas, desde admin.html
   publicView: "public_numbers", // vista de solo número y estado: la usan los visitantes
