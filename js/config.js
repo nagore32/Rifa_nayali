@@ -40,8 +40,9 @@ const CONFIG = {
     { name: "Kit de licores", img: "images/premio3.jpg" },
     { name: "Cena para 2 en Juicy Lucy Larcomar", img: "images/premio4.jpg" },
     { name: "Sesión de fotos profesional simple", img: "images/premio5.jpg" },
-    { name: "Entradas dobles + combo", img: "images/premio6.jpg" }
-
+    { name: "Entradas dobles + combo", img: "images/premio6.jpg" },
+    { name: "Figuras de Boa Hancock Banpresto", img: "images/Boah_H.jpg" },
+   { name: "Figuras de Law Banpresto", img: "images/Law.png" }
     // Descomenta esta línea y cambia los datos cuando tengas la foto:
     // , { name: "Figuras de one piece", img: "images/premio7.jpg" }
   ]
