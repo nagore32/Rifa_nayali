@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex, nofollow">
+<title>Panel del organizador</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Passion+One:wght@700&family=Titan+One&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bgs" aria-hidden="true"><i class="bg-a"></i><i class="bg-b"></i><i class="sun"></i></div>
+
+  <div class="wrap" style="max-width:480px">
+    <header class="hero" style="padding-top:40px">
+      <h1 class="title" style="font-size:clamp(2.1rem,10vw,3rem)">Panel</h1>
+      <p class="say" style="margin-top:6px"><span style="color:var(--ink2);font-weight:700">Solo tú puedes entrar aquí con tu correo y contraseña.</span></p>
+    </header>
+
+    <section class="board" id="loginBox">
+      <h2 class="sec" style="font-size:1.5rem">Iniciar sesión</h2>
+      <label class="fld">Correo<input id="email" type="email" autocomplete="username" inputmode="email"></label>
+      <label class="fld">Contraseña<input id="pass" type="password" autocomplete="current-password"></label>
+      <p class="msg err" id="loginErr" role="alert"></p>
+      <button class="btn" id="loginBtn" type="button" style="margin-top:16px;width:100%">Entrar</button>
+      <p class="msg" style="margin-top:14px">¿Aún no creaste tu usuario? Sigue el paso 2 del README.md.</p>
+    </section>
+
+    <section class="board" id="panel" hidden>
+      <div class="board-top">
+        <h2 class="sec" style="font-size:1.5rem">Compradores</h2>
+        <button class="logout" id="logoutBtn" type="button">Cerrar sesión</button>
+      </div>
+      <div class="stats" id="stats"></div>
+      <label class="fld">Buscar número<input id="search" inputmode="numeric" placeholder="Ej. 23" autocomplete="off"></label>
+      <div class="grid" id="grid"></div>
+      <p class="msg err" id="loadErr" role="alert"></p>
+
+      <div id="editor" hidden>
+        <h3 style="margin:20px 4px 4px;font:400 1.6rem/1.1 var(--f-title)">Número <span id="edNum"></span></h3>
+        <label class="fld">Estado
+          <select id="edStatus">
+            <option value="free">Libre</option>
+            <option value="reserved">Apartado</option>
+            <option value="paid">Pagado</option>
+          </select>
+        </label>
+        <label class="fld">Nombre del comprador<input id="edName" autocomplete="off"></label>
+        <label class="fld">WhatsApp o teléfono<input id="edPhone" inputmode="tel" autocomplete="off"></label>
+        <label class="fld">Nota<input id="edNote" autocomplete="off" placeholder="Ej. paga el viernes"></label>
+        <p class="msg err" id="edErr" role="alert"></p>
+        <button class="btn" id="edSave" type="button" style="margin-top:16px;width:100%">Guardar</button>
+      </div>
+    </section>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

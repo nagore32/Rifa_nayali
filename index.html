@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="light dark">
+<title>Gran Rifa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&family=Passion+One:wght@700&family=Titan+One&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bgs" aria-hidden="true"><i class="bg-a"></i><i class="bg-b"></i><i class="sun"></i></div>
+
+  <div class="wrap">
+    <header class="hero">
+      <svg class="spk s1" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1C13 8 16 11 23 12C16 13 13 16 12 23C11 16 8 13 1 12C8 11 11 8 12 1Z"/></svg>
+      <svg class="spk s2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1C13 8 16 11 23 12C16 13 13 16 12 23C11 16 8 13 1 12C8 11 11 8 12 1Z"/></svg>
+      <h1 class="title" id="title">Gran Rifa</h1>
+      <div class="intro">
+        <div class="pricebox">
+          <div class="price" id="price">S/10</div>
+          <p class="pcap">cada número</p>
+        </div>
+        <div class="say">
+          <p id="message"></p>
+          <a class="phone" id="phone" target="_blank" rel="noopener noreferrer" href="#"></a>
+        </div>
+      </div>
+      <button class="btn cta" id="goboard">Elegir mis números</button>
+    </header>
+
+    <section class="prizes" id="prizes" aria-labelledby="ph">
+      <h2 class="sec" id="ph">Premios</h2>
+      <div class="pgrid" id="pgrid"></div>
+    </section>
+
+    <section class="board" id="tablero" aria-labelledby="bh">
+      <div class="board-top">
+        <h2 class="sec" id="bh">Elige tus números</h2>
+        <button class="refresh" id="refresh" type="button">Actualizar tablero</button>
+      </div>
+      <div class="meter">
+        <div class="track" role="img" aria-label="Disponibilidad del tablero">
+          <i class="p" id="pbar"></i><i class="r" id="rbar"></i>
+        </div>
+        <div class="legend">
+          <span><i class="key"></i><span id="lfree">Libre</span></span>
+          <span><i class="key r"></i><span id="lresv">Apartado</span></span>
+          <span><i class="key p"></i><span id="lpaid">Pagado</span></span>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+      <p class="msg" id="boardmsg"></p>
+    </section>
+
+    <footer class="foot" id="foot">
+      <p class="draw" id="drawDate"></p>
+      <p class="pay" id="payInfo"></p>
+      <p class="who" id="organizer"></p>
+      <p class="credit">Los números pagados los actualiza el organizador desde su panel de base de datos.</p>
+    </footer>
+  </div>
+
+  <div class="bar" id="bar" role="region" aria-label="Tu selección"></div>
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
